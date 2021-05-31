@@ -1,0 +1,165 @@
+
+/* 
+
+    HOME 
+
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+/* 
+
+    MAIN
+
+*/
+
+main {
+    /* background-color: #b37100; */
+   display: grid;
+   grid-template-columns: 7fr 3fr;
+   justify-items: center;
+   
+   
+}
+.container-opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+    
+}
+
+section{
+    grid: 1/2;
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+}
+
+.container-pedido {
+    grid: 2/3;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+
+.card-produto {
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: 2px 2px 5px darkgray;
+   text-align: center;
+   background-color: rgb(255, 255, 255);
+   width: 210px;
+   margin: 10px;
+   height: 300px;
+   
+}
+
+.container-caixa {
+    width: 80%;
+    
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    
+  
+    
+    align-self: center;
+}
+
+.imagem-card {
+   width: 100%;
+   height: 200px;
+ }
+ 
+
+.container-pedido img {
+    width: 50px;
+    align-self: center;
+    margin-bottom: 15px
+    
+}
+
+.container-pedido h2 {
+    background-color: #4CAF50;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.titulo {
+    background-color: #b37100;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    margin-top: 0;
+}
+
+.card-produto button {
+    background-color: #4CAF50;
+    color: white;
+    width: 95px;
+    height: 35px;
+    font-size: 15px;
+    /* border: none; */
+    border-style: outset;
+    border-color: #4CAF50;
+}
+
+.botao-saiba {
+    margin-bottom: 15px;
+}
+
+.card-produto button:hover {
+    transform: scale(1.3);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+/* 
+
+    MAIN - RESPONSIVIDADE 
+
+*/
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card-produto {
+        width: 310px;
+    }
+
+    .container-pedido {
+        margin-bottom: 15px;
+    }
+}
