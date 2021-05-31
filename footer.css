@@ -1,0 +1,95 @@
+/* 
+
+    FOOTER
+
+*/
+
+.footer {
+    display: flex;
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #EDD86B;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+    margin-right: 26px;
+}
+
+.container-footer {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.container-footer li {
+    margin-left: 10px;
+}
+
+.container-footer li a:hover {
+    color: black;
+}
+
+.container-footer li a {
+    display: block;
+    padding: 10px;
+
+}
+
+#redes-sociais {
+    padding: 10px;
+}
+
+#redes-sociais img {
+    width: 40px;
+    margin-left: 16px;
+}
+
+#redes-sociais a {
+    background-image: none;
+}
+
+/*  
+    RESPONSIVIDADE
+
+*/
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #redes-sociais img {
+        
+        margin-left: 0;
+    }
+
+    .container-footer li {
+       margin: 0;
+       padding: 0;
+
+    }
+
+    .container-footer li a {
+        margin: 0;
+       padding: 0;
+    }
+    
+}

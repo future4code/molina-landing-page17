@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* 
+
+ main 
+
+ 
+ */
+
+ main {
+     /* background-color: #b37100; */
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+.container-opcoes {
+    
+   width: 100%;
+   padding: 5% 5% 5% 5%;
+
+   /* background-color: tomato; */
+}
+
+.container-pedido {
+    width: 100%;
+    background-color: teal;
+}
+
+.container-explicacao {
+    width: 100%;
+    background-color: #ffd060;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container-explicacao h2 {
+   text-align: center;
+   margin-top: 1%;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-explicacao p {
+    text-align: center;
+    font-size: 25px;
+    font-family: Comic Sans MS, Comic Sans, cursive ;
+}
+ 
+.card-produto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px darkgray;
+    text-align: center;
+    background-color: white;
+}
+
+.imagem-card {
+    width: 100%;
+    height: 300px;
+  }
+  
+.container-opcoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    
+}
+
+ .card-produto button {
+    background-color: #68b465;
+    color: white;
+    width: 95px;
+    height: 35px;
+    font-size: 15px;
+    /* border: none; */
+    border-style: outset;
+    border-color: #68b465;
+}
+
+
+
+.botao-saiba {
+    
+    align-self: flex-end;
+    margin: 0 10px 10px 0;
+
+}
+
+.card-produto button:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.4);
+    cursor:  pointer;
+ }
+
+ /*  
+    RESPONSIVIDADE
+
+*/
+
+@media screen and (min-device-width: 320px) and (max-device-width: 420px) {
+    .container-opcoes {
+
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-card {
+        height: 210px;
+    }
+
+
+}
